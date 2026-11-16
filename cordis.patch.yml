@@ -1,0 +1,3 @@
+- insert:
+    - id: reject-system-dirs
+      name: dsh-reject-system-dirs
