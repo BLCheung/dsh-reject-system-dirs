@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Reject system directories",
+    "description": "Blocks AI and subagents from writing into system directories (/tmp, /var, /etc, and so on) while leaving same-named directories inside the project writable. Reads stay allowed by default; enable read warnings in the plugin settings to record them under the project .agents directory."
+  }
+}
