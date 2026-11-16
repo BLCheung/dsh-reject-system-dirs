@@ -1,0 +1,68 @@
+{
+  "name": "dsh-reject-system-dirs",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: block writes into system directories with configurable rules and audit logs",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "assets/screenshot.png",
+    "README.md",
+    "icon.svg",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "security",
+    "filesystem",
+    "sandbox",
+    "audit"
+  ],
+  "license": "MIT",
+  "author": "BLCheung (https://github.com/BLCheung)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLCheung/dsh-reject-system-dirs.git"
+  },
+  "homepage": "https://github.com/BLCheung/dsh-reject-system-dirs#readme",
+  "bugs": {
+    "url": "https://github.com/BLCheung/dsh-reject-system-dirs/issues"
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.5 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": ">=3.19.0 <4"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-plugin-manager",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test test/paths.test.js test/bash.test.js"
+  }
+}
