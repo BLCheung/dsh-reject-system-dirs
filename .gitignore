@@ -1,4 +1,9 @@
 node_modules/
 .DS_Store
-.agents/
 *.log
+
+# AI
+.claude/
+.agents/
+AGENTS.md
+CLAUDE.md
