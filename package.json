@@ -19,8 +19,10 @@
     "locale/*.json",
     "assets/screenshot.png",
     "README.md",
+    "README.en.md",
     "icon.svg",
     "CHANGELOG.md",
+    "CHANGELOG.en.md",
     "LICENSE"
   ],
   "keywords": [

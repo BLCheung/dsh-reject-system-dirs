@@ -2,6 +2,8 @@
   <img src="icon.svg" alt="dsh-reject-system-dirs" width="72" height="72">
 </p>
 
+[English](README.en.md) | 简体中文
+
 # dsh-reject-system-dirs
 
 <p align="center">
